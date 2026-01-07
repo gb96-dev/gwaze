@@ -48,4 +48,3 @@ Hibernate:
 
 원인: Gwaze 엔티티가 Member를 참조하고 있으며, DTO로 변환하는 과정에서 member.getName()을 호출했기 때문입니다.
 
-해결 방안 (선택): 만약 쿼리를 한 번(한 줄)으로 줄이고 싶다면, Repository에서 fetch join을 사용하여 한 번에 데이터를 가져오도록 개선할 수 있습니다.
